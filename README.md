@@ -10,7 +10,11 @@ conda env create -f environment.yml
 conda activate tta_ft
 # We run the code under torch version 2.1.0 with CUDA-12.1
 ```
-We recommend referring to [this repository](https://github.com/mariodoebler/test-time-adaptation/tree/main?tab=readme-ov-file#classification) to obtain the required datasets and source domain models. After downloading, please modify `_C.DATA_DIR` in `conf.py` accordingly.
+We recommend referring to [this repository](https://github.com/mariodoebler/test-time-adaptation/tree/main?tab=readme-ov-file#classification) to obtain the required CTTA datasets. 
+
+Model weights used for cifar & Our synthetic datasets: [Google Drive Link](https://drive.google.com/drive/folders/1D5aTxvgWJYYtZ-kK_56iwUX1OgSJC6hx?usp=sharing) 
+
+After downloading, please modify `_C.DATA_DIR` in `conf.py` accordingly.
 
 ## Experiment Execution
 
