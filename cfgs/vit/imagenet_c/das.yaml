@@ -1,0 +1,46 @@
+CORRUPTION:
+  DATASET: imagenet_c
+  SEVERITY:
+    - 5
+  TYPE:
+    - gaussian_noise
+    - shot_noise
+    - impulse_noise
+    - defocus_blur
+    - glass_blur
+    - motion_blur
+    - zoom_blur
+    - snow
+    - frost
+    - fog
+    - brightness
+    - contrast
+    - elastic_transform
+    - pixelate
+    - jpeg_compression
+MIXED_PRECISION: True
+MODEL:
+  ADAPTATION: das
+  ARCH: VIT_B_224_Style
+STYLE:
+  USE_FourierST: True
+  LAMBDA_CE_SRC: 1.0
+  LAMBDA_CONT: 1.0
+  LAMBDA_CE_TRG: 1.0
+  ST_LAYERS: [3,4]
+OPTIM:
+  BETA: 0.9
+  LR: 1e-5
+  METHOD: Adam
+  STEPS: 1
+  WD: 0.0
+TEST:
+  BATCH_SIZE: 50
+SOURCE:
+  NUM_SAMPLES: 2000
+  USE_SYN: True
+M_TEACHER:
+  MOMENTUM: 0.9
+CONTRAST:
+  TEMPERATURE: 1.0
+  BASE_TEMPERATURE: 1.0

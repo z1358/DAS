@@ -1,0 +1,35 @@
+CORRUPTION:
+  DATASET: cifar10_c
+  SEVERITY:
+    - 5
+  TYPE:
+    - gaussian_noise
+    - shot_noise
+    - impulse_noise
+    - defocus_blur
+    - glass_blur
+    - motion_blur
+    - zoom_blur
+    - snow
+    - frost
+    - fog
+    - brightness
+    - contrast
+    - elastic_transform
+    - pixelate
+    - jpeg_compression
+MODEL:
+  ADAPTATION: dpcore
+  ARCH: vit_base_patch16_224.augreg_in1k
+  load_ckpt: True
+  CKPT_PATH: /mnt/Data1/zzl/projects/vision-transformers-cifar10-main/checkpoint/vit_base_patch16_224_augreg_in1k-CIFAR10-best.pth
+OPTIM:
+  BETA: 0.9
+  LR: 0.01
+  METHOD: AdamW
+  STEPS: 1
+  WD: 0.01
+TEST:
+  BATCH_SIZE: 50
+DPCore:
+  THR_RHO: 0.9

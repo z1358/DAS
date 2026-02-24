@@ -1,0 +1,27 @@
+CORRUPTION:
+  DATASET: cifar100_c
+  SEVERITY:
+    - 5
+  TYPE:
+    - gaussian_noise
+    - shot_noise
+    - impulse_noise
+    - defocus_blur
+    - glass_blur
+    - motion_blur
+    - zoom_blur
+    - snow
+    - frost
+    - fog
+    - brightness
+    - contrast
+    - elastic_transform
+    - pixelate
+    - jpeg_compression
+MODEL:
+  load_ckpt: True
+  ADAPTATION: source
+  ARCH: vit_base_patch16_224.augreg_in1k
+  CKPT_PATH: /mnt/Data1/zzl/projects/vision-transformers-cifar10-main/checkpoint/vit_base_patch16_224_augreg_in1k-CIFAR100-best.pth
+TEST:
+  BATCH_SIZE: 50
