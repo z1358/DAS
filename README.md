@@ -33,6 +33,12 @@ bash scripts/IN-C.sh
 ## Citation
 Please cite our work if you find it useful.
 ```bibtex
+@article{zhu2026dance,
+  title={Dance Across Shifts: Forward-Facilitation Continual Test-Time Adaptation through Dynamic Style Bridging},
+  author={Zhu, Zhilin and Wang, Yabin and Ma, Zhiheng and Song, Yaguang and Wang, Yaowei and Hong, Xiaopeng},
+  journal={arXiv preprint arXiv:2605.18608},
+  year={2026}
+}
 ```
 
 ## Acknowledgement 
