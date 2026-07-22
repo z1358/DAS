@@ -33,10 +33,11 @@ bash scripts/IN-C.sh
 ## Citation
 Please cite our work if you find it useful.
 ```bibtex
-@article{zhu2026dance,
+@inproceedings{zhu2026dance,
   title={Dance Across Shifts: Forward-Facilitation Continual Test-Time Adaptation through Dynamic Style Bridging},
   author={Zhu, Zhilin and Wang, Yabin and Ma, Zhiheng and Song, Yaguang and Wang, Yaowei and Hong, Xiaopeng},
-  journal={arXiv preprint arXiv:2605.18608},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={32322--32333},
   year={2026}
 }
 ```
