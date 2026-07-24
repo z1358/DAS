@@ -12,7 +12,7 @@ conda activate tta_ft
 ```
 We recommend referring to [this repository](https://github.com/mariodoebler/test-time-adaptation/tree/main?tab=readme-ov-file#classification) to obtain the required CTTA datasets. 
 
-Model weights used for cifar & Our synthetic datasets: [Google Drive Link](https://drive.google.com/drive/folders/1D5aTxvgWJYYtZ-kK_56iwUX1OgSJC6hx?usp=sharing) 
+Model weights used for cifar & Our synthetic datasets: [Google Drive Link](https://drive.google.com/drive/folders/1D5aTxvgWJYYtZ-kK_56iwUX1OgSJC6hx?usp=sharing) Hugging Face links: [Model weights](https://huggingface.co/Adaptation99/DAS_CIFAR_WEIGHTS/tree/main)  & [Synthetic datasets](https://huggingface.co/datasets/Adaptation99/DAS_SYN_DATASET/tree/main).
 
 After downloading, please modify `_C.DATA_DIR` in `conf.py` accordingly.
 
